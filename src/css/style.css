@@ -1,0 +1,232 @@
+
+
+body{
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+
+	background: linear-gradient(to right, #eb01a5, #31a4d1);
+}
+
+.comments-container{
+	width: 800px;
+	margin: 100px auto;
+	color: white;
+}
+
+.comments-container > .comment{
+	margin-bottom: 10px;
+}
+
+.comments-container .comment{
+	display: flex;
+}
+
+.comments-container .comment .line{
+	position: relative;
+	width: 10px;
+	height: 50%;
+	border-left: solid 2px #558bff;
+	border-bottom: solid 2px #558bff;
+	border-radius: 0 0 0 8px;
+}
+
+.comments-container .comment .comment-wrapper{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.comments-container .comment .comment-wrapper .content{
+	width: 100%;
+	display: flex;
+	border: solid 2px #558bff;
+	padding: 10px;
+	border-radius: 12px;
+	background-color: rgb(24, 43, 80);
+}
+
+.comments-container .comment .replies{
+	position: relative;
+	padding-top: 10px;
+	padding-left: 35px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+}
+
+.comments-container .comment .replies::before{
+	content: "";
+	position: absolute;
+	background-color: #558bff;
+	width: 2px;
+	top: 0;
+	height: calc(100% - 53px);
+}
+
+.comments-container .comment .comment-wrapper .content img{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	*padding-right: 10px;
+	border: solid 1px white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+	cursor: pointer;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-left: 10px;
+}
+
+.comments-container 
+  .comment 
+  .comment-wrapper 
+  .content 
+  .comment-info
+  .header
+  .username{
+  	font-weight: bold;
+  	color: blue;
+
+  }
+
+  .comments-container 
+  .comment 
+  .comment-wrapper 
+  .content 
+  .comment-info
+  .header
+  .date{
+
+  	color: #999;
+  }
+
+  .comments-container 
+  .comment 
+  .comment-wrapper 
+  .content 
+  .comment-info
+  .actions{
+  	display: flex;
+  	gap: 5px;
+  }
+
+  .comments-container 
+  .comment 
+  .comment-wrapper 
+  .content 
+  .comment-info
+  .actions button{
+  	border: none;
+  	background-color: transparent;
+  	color: blue;
+  	cursor: pointer;
+  	padding: 5px;
+  	border-radius: 3px;
+  }
+
+  .comments-container 
+  .comment 
+  .comment-wrapper 
+  .content 
+  .comment-info
+  .actions button:hover{
+  	border: none;
+  	background-color: transparent;
+  	color: #999;
+  	cursor: pointer;
+  	padding: 5px;
+  	border-radius: 3px;
+  	transform: scale(1.1);
+  }
+
+  /*Codigo-estilo de burbujas de contacto*/
+
+  .personas-container{
+	margin: 100px auto;
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.personas-container .persona{
+	position: relative;
+	margin-right: -20px;
+	display: inline-flex;
+	flex-direction: column;
+	margin-left: 5px;
+}
+
+.personas-container .persona img{
+	width: 50px;
+	height: 50px;
+	background-color: rgb(24, 43, 80);
+	border-radius: 50%;
+	border: solid 2px #999;
+	transition: transform 0.3s ease-in-out;
+	cursor: pointer;
+	position: sticky;
+}
+
+.personas-container .persona:hover img{
+	transform: translateY(-6px);
+}
+
+.personas-container .persona .name{
+	position: absolute;
+	background-color: rgb(24, 43, 80);
+	border-radius: 12px;
+	border: solid 2px #999;
+	color: white;
+	min-width: 100px;
+	width: 150px;
+	top: -60px;
+	left: calc((100% + 10px) * -1);
+	padding: 10px 15px;
+	display: none;
+}
+
+.personas-container .persona:hover .name{
+	display: inline-block;
+}
+
+.personas-container .persona .name .text{
+	display: inline-block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	text-align: center;
+	box-sizing: border-box;
+	width: 150px;
+}
+
+.personas-container .persona .name::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: solid 10px rgb(24, 43, 80);
+	border-bottom: solid 10px transparent;
+	border-left: solid 10px transparent;
+	border-right: solid 10px transparent;
+	left: calc(50% - 10px);
+	bottom: -20px;
+}
+
+h3{
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	background-color: rgb(24, 43, 80);
+	color: blue;
+	border: solid 2px #558bff;
+	border-radius: 12px;
+}
+
+
